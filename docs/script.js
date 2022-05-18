@@ -72,16 +72,21 @@ const htmlBody = () => {
 				<div class="book">
 					<div class="number">${num}</div>
 					<div class="sub">
-						<h3 class="">${book.sub}</h3>
+						<h3>${book.sub}</h3>
 					</div>
 					<div class="title">
-						<h1 class="">${book.title}</h1> 
+						<h1>${book.title}</h1> 
 					</div>
 					<div class="text">
-						<p class="">${book.text}</p>
+						<p>${book.text}</p>
 					</div>
 				</div>
-				<button>read more</button>
+				<button id="read">
+					<h4>read more</h4>
+					<span id="spanArr" class="material-symbols-outlined">
+						arrow_forward
+					</span>
+				</button>
 			</div>
 			`
 		)

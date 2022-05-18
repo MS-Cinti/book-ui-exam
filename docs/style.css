@@ -45,6 +45,7 @@ header{
     width: 100%;
     height: 40px;
     background-color: #1a24fb;
+    z-index: 99;
 }
 
 header .logo{
@@ -54,7 +55,17 @@ header .logo{
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     color: #f8f7f3;
+    transform: translate(1%, 85%);
 }
+
+#spanMenu{
+    position: absolute;
+    font-weight: 700;
+    right: 1%;
+    top: 20%;
+    font-size: 24px;
+    color: #f8f7f3;
+} 
 
 #flex-container{
     display: flex;
@@ -72,14 +83,13 @@ header .logo{
 .book{
     position: relative;
     width: 350px;
-    height: 400px;
+    height: 415px;
     border: 2px solid #1a24fb;
+    padding: 40px;
 }
 
 .sub, .title, .text{
     color: #1a24fb;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 .sub h3{
@@ -88,19 +98,79 @@ header .logo{
     font-size: 12px;
     letter-spacing: 0.2em;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 7%;
-    margin-bottom: 2%;
+    /* margin-top: -1%;
+    margin-bottom: 4%;  */
+}
+
+.title{
+    height: 27%;
+}
+
+.text{
+    margin-top: 17%;
 }
 
 .title h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     font-weight: 700;
+    margin-top: 2%;
 }
 
 .text p{
     font-family: 'Overpass', sans-serif;
-    margin-top: 5%;
+   margin-top: 9%;
     font-weight: 400;
 }
 
+.number{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    color: #1a24fb;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    top: 1%;
+    right: -3%;
+}
+
+#read{
+    position: relative;
+    width: 100%;
+    height: 18px;
+    font-size: 14px;
+    color: #1a24fb;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2%;
+}
+
+#read:hover{
+    color: #f8f7f3;
+    background-color: #1a24fb;
+}
+
+#read h4{
+    font-weight: 400;
+    transform: translate(-39%, 10%);
+}
+
+#spanArr{
+    position: absolute;
+    font-size: 18px;
+    right: 2%;
+    top: 10%;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 420px) {
+    header .logo{
+        transform: translate(2%, 85%);
+    }
+
+    #spanMenu{
+        position: absolute;
+        right: 3%;
+        top: 20%;
+    }
+}
